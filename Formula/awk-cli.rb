@@ -1,31 +1,31 @@
 class AwkCli < Formula
   desc "Token-only, swagger-driven CLI for awork"
   homepage "https://github.com/awork-io/awk-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/awork-io/awk-cli/releases/download/v0.1.1/awork-osx-arm64.tar.gz"
-      sha256 "65c7d1ddb4836a97fdc3c1750ec6baa73422d552512def065fda4af3edd9b611"
+      url "https://github.com/awork-io/awk-cli/releases/download/v0.1.2/awork-osx-arm64.tar.gz"
+      sha256 "bc1006dfef8b4f38d2da4f2b854c265f731097f79b081ef20738a14ed66574f8"
     end
 
     on_intel do
-      url "https://github.com/awork-io/awk-cli/releases/download/v0.1.1/awork-osx-x64.tar.gz"
-      sha256 "4e41b62e3b40167f0b54670ebdb4fe55fb66ae690e72d94bfd63247e48cd04ef"
+      url "https://github.com/awork-io/awk-cli/releases/download/v0.1.2/awork-osx-x64.tar.gz"
+      sha256 "249b2fbeb4fdc78b9a526b9bc489e7c9e4ba26ea54bef0f5f9eea3b66e91ded2"
     end
   end
 
   on_linux do
-    url "https://github.com/awork-io/awk-cli/releases/download/v0.1.1/awork-linux-x64.tar.gz"
-    sha256 "bd321c9a25e51fd2f9d4a09ae3e7bce2084816e2157b7aa09d840bd0b35df934"
+    url "https://github.com/awork-io/awk-cli/releases/download/v0.1.2/awork-linux-x64.tar.gz"
+    sha256 "896312ec7da31e019608b4622e266d033fef3b00581f986625be271c462e1381"
   end
 
   def install
-    bin.install "awork"
+    bin.install "awk-cli"
   end
 
   test do
-    assert_match "USAGE", shell_output("#{bin}/awork --help")
+    assert_match "USAGE", shell_output("#{bin}/awk-cli --help")
   end
 end
