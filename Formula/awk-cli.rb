@@ -26,6 +26,6 @@ class AwkCli < Formula
   end
 
   test do
-    assert_match "awork", shell_output("#{bin}/awork --version")
+    assert_match "USAGE", shell_output("#{bin}/awork --help")
   end
 end
