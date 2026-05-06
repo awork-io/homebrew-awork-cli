@@ -1,17 +1,17 @@
 class Awdbg < Formula
   desc "Investigate awork tasks, Sentry issues, and SigNoz traces"
   homepage "https://github.com/awork-io/awork-debugger"
-  version "0.2.4"
+  version "0.2.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/awork-io/awork-debugger/releases/download/v0.2.4/awdbg-v0.2.4-macos-arm64.tar.gz",
+      url "https://github.com/awork-io/awork-debugger/releases/download/v0.2.5/awdbg-v0.2.5-macos-arm64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4e0cc70cfd91a1e2829f295bf1996cb1212fe31c2cd89ea6bb790c2e31a01a7d"
+      sha256 "920bffa2e2dc93ffe38fd40da44f50a5e7c439ff890e8083f39689c1ab3ddb29"
     else
-      url "https://github.com/awork-io/awork-debugger/releases/download/v0.2.4/awdbg-v0.2.4-macos-x64.tar.gz",
+      url "https://github.com/awork-io/awork-debugger/releases/download/v0.2.5/awdbg-v0.2.5-macos-x64.tar.gz",
           using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "02060d313e0f253bb8283b9b13d241401d033042c9d67a31e66a28dc189a50b2"
+      sha256 "e61f494f4cea6e6196bd635f7a3be662fc11e6876eb0b4c2261ec988441a681b"
     end
   end
 
