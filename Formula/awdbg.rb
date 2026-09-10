@@ -1,23 +1,23 @@
 class Awdbg < Formula
   desc "Investigate awork tasks, Sentry issues, and SigNoz traces"
   homepage "https://github.com/awork-io/awork-debugger"
-  version "0.2.20"
+  version "0.2.21"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/awork-io/awork-debugger/releases/assets/552207396",
+      url "https://api.github.com/repos/awork-io/awork-debugger/releases/assets/555047289",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
           ]
-      sha256 "d6e45ff2f9b758fa0413462ddd6956216ed217637f825fa0216d56093fceb6bc"
+      sha256 "8cc03140a2eaa1a5256aa348c743cfd1bcb53855890c34fc17cdb041a3d1a563"
     else
-      url "https://api.github.com/repos/awork-io/awork-debugger/releases/assets/552207394",
+      url "https://api.github.com/repos/awork-io/awork-debugger/releases/assets/555047285",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
           ]
-      sha256 "304c3cf36e7789497349c7992ae5fc440e330277640ceb019dd1c6d3cf237e73"
+      sha256 "68023bfe66a795a6afbb5e00dee326edb5d4f5810262cc7f04971387f86e5c45"
     end
   end
 
