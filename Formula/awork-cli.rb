@@ -1,24 +1,24 @@
 class AworkCli < Formula
   desc "Token-only, swagger-driven CLI for awork"
   homepage "https://github.com/awork-io/awork-cli"
-  version "0.2.26"
+  version "0.2.27"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/awork-io/awork-cli/releases/download/v0.2.26/awork-osx-arm64.tar.gz"
-      sha256 "ccfb1ff6732cb3365e1d35351eb4b3725c3ec3c1425a4737f28180881819efec"
+      url "https://github.com/awork-io/awork-cli/releases/download/v0.2.27/awork-osx-arm64.tar.gz"
+      sha256 "ccb9b935f61304230d9678049b12b562b54ca407295e2a76a1fb445d1ee46719"
     end
 
     on_intel do
-      url "https://github.com/awork-io/awork-cli/releases/download/v0.2.26/awork-osx-x64.tar.gz"
-      sha256 "396b39bbac60e897fa60f9647b59e8f60a741a82f431c00fbaa51d7e89682b97"
+      url "https://github.com/awork-io/awork-cli/releases/download/v0.2.27/awork-osx-x64.tar.gz"
+      sha256 "ef121371a1fc55fc3ed65a21cebfcbbfb7a42b367a520386ce5982e320fb7f9e"
     end
   end
 
   on_linux do
-    url "https://github.com/awork-io/awork-cli/releases/download/v0.2.26/awork-linux-x64.tar.gz"
-    sha256 "909c90222b88db42e52bf222f2817ca16a18ba38e67cf7a6b45d15cfa9196a8e"
+    url "https://github.com/awork-io/awork-cli/releases/download/v0.2.27/awork-linux-x64.tar.gz"
+    sha256 "32f5d9ec3a07d691819f9be3884bf8538a0fd6bec8c4550d53067c7f77a25689"
   end
 
   def install
